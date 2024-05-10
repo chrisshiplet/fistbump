@@ -72,7 +72,7 @@ jobs:
           TARGET: x86_64-unknown-linux-musl
         run: cargo build --release --verbose --target $TARGET --locked
       - name: Compress Binary
-        uses: master-atul/tar-action@v1.0.2
+        uses: a7ul/tar-action@v1.0.2
         id: compress
         with:
           command: c
@@ -100,7 +100,7 @@ jobs:
           TARGET: x86_64-apple-darwin
         run: cargo build --release --verbose --target $TARGET --locked
       - name: Compress Binary
-        uses: master-atul/tar-action@v1.0.2
+        uses: a7ul/tar-action@v1.0.2
         id: compress
         with:
           command: c
